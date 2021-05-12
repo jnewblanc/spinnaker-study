@@ -51,15 +51,15 @@ kind: Ingress
 metadata:
     annotations:
         nginx.ingress.kubernetes.io/rewrite-target: /$2
-    name: mild-temper-ingress
+    name: aggressive-disposal-ingress
     namespace: microservices
 spec:
     rules:
         -   http:
                 paths:
-                    -   path: /mild-temper(/|$)(.*)
+                    -   path: /aggressive-disposal(/|$)(.*)
                         backend:
-                            serviceName: mild-temper-microservice-service
+                            serviceName: aggressive-disposal-microservice-service
                             servicePort: 30201
 
 
