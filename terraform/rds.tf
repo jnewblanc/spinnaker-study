@@ -5,7 +5,7 @@ provider "aws" {
 variable "team-name" {
   description = "team-name"
   type        = string
-  default     = "default-team-name"
+  default     = "aggressive-disposal"
 }
 
 resource "aws_db_instance" "microservice-db" {
@@ -79,12 +79,12 @@ output "db_address" {
 #terraform {
 #    backend "s3" {
 #  # Replace this with your bucket name!
-#    bucket         = "terraform-up-and-running-state"
+#    bucket         = "aggressive-disposal-terraform-up-and-running-state"
 #    key            = "global/s3/terraform.tfstate"
 #    region         = "us-east-2"
 #
 #  # Replace this with your DynamoDB table name!
-#    dynamodb_table = "terraform-up-and-running-locks"
+#    dynamodb_table = "aggressive-disposal-terraform-up-and-running-locks"
 #    encrypt        = true
 #    }
 #}
